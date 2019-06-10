@@ -1,7 +1,7 @@
 const Logger = require('./logger');
 const http = require('http');
 const logger = new Logger();
-logger.on('OnMessage', (args) => {
+logger.on('OnMessageLogged', (args) => {
     console.log('Listener Called', args);
 });
 logger.log('message');
